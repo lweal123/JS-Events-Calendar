@@ -1,0 +1,229 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.none{
+	display:none;
+}
+
+#primaryBody {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+#calendarDisplayContainer {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	display: inline-block;
+}
+
+#popupDisplayContainer {
+	position: relative;
+	display: none;
+	width: 100%;
+	height: 600px;
+}
+
+#topNav {
+	position: relative;
+	width: 100%;
+	left: 0px;
+	height: 50px;
+	background-color: blue;
+}
+
+#calendarWrapper{
+	width:100%;
+	margin:auto 0;
+}
+
+#calendarWrapper #navBar{
+	background-color:#efefef;
+	color:#444444;
+	font-size:17px;
+	text-align:center;
+	line-height:30px;
+    padding: 5px 8px;
+}
+
+#calendarWrapper select{
+	color: #444444;
+	font-size:17px;
+}
+#days{
+	width:100%;
+	float:left;
+	background-color: gray;
+}
+#days ul{
+	padding:0;
+	list-style-type:none;
+}
+#days ul li{
+	float:left;
+	display:block;
+	width:14.15%;
+	text-align:center;
+	font-size:14px;
+	min-height:0;
+	background:none;
+	box-shadow:none;
+	margin:0;
+	padding:0;
+}
+#cellContainer{
+	width:100%;
+	float:left;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+#cellContainer ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#cellContainer ul li{
+	float:left;
+	width:14.15%;
+	height:120px;
+	text-align:center;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	min-height:0;
+	background:none;
+	box-shadow:none;
+	margin:0;
+	padding:0;
+	position:relative;
+	min-height:150px;
+height: 100%;
+}
+#cellContainer ul li span{
+	margin-top:4px;
+	float:left;
+	margin-left:4px;
+        width: 100%;
+	text-align:center;
+font-size: 12px;
+
+}
+
+#cellContainer ul li div{
+	margin-top:4px;
+	float: left;
+	text-align:center;
+color: white;
+
+}
+
+.grey{
+	background-color:#DDDDDD !important;
+}
+
+.date_cell {
+	cursor: pointer;
+	cursor: hand;
+}
+.date_cell:hover {
+	background: #B9FFFF !important;
+}
+.no_date {
+	background: black !important;
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+	#calendarWrapper{ width:336px;}
+	#days ul li{ width:47px;}
+	#cellContainer ul li{ width:47px;}
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	#calendarWrapper{ width:219px;}
+	#days ul li{ width:30px; font-size:11px;}
+	#cellContainer ul li{ width:30px;}
+	#cellContainer{ width:217px;}
+	#cellContainer ul li{ height:50px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	#calendarWrapper{ width:530px;}
+	#days ul li{ width:74px;}
+	#cellContainer ul li{ width:74px;}
+	#cellContainer{ width:525px;}
+	#cellContainer ul li{ height:50px;}
+}
+/* end calendar css */
+
+
+#resultsTableContainer{
+	position: relative;
+	width: 80%;
+	left: 10%;
+}
+
+.resultsTable {
+	font-size: 10px;
+	color: black;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 1px;
+}
+
+.resultsTable th, td{
+	border: 1px solid black;
+}
+
+.popContainer{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background-color: black;
+	left: 0px;
+}
+.exitContainer {
+	position: relative;
+	margin: auto;
+	width: 800px;
+	height: 60px;
+	z-index: 999;
+	padding-bottom: 25px;
+}
+.exit {
+	position: absolute;
+	cursor: pointer;
+	width: 60px;
+	text-align: center;
+	font-size: 50px;
+	border: 1px solid black;
+	border-radius: 50%;
+	right: 0px;
+}
+
+.popTableContainer {
+	position: relative;
+	margin: auto;
+	top: 50px;
+	width: 800px;
+	background-color: #f3f6f8;
+	padding: 25px;
+}
+
+.popTable {
+	font-size: 18px;
+	color: black;
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 50px 25px 50px 25px;
+}
+
+.popTable th, td{
+	border: 1px solid black;
+	width: 150px;
+}
